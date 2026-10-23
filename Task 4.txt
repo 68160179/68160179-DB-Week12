@@ -1,0 +1,3 @@
+4 อธิบายว่าทำไม UPDATE/DELETE ต้องมี WHERE และแสดงการ bind parameter
+
+ans ถ้าไม่มี WHERE คำสั่ง UPDATE/DELETE จะมีผลกับ ทุกแถว ในตาราง ส่วนการใช้ ? (prepared statement) ทำให้ข้อมูลที่ผู้ใช้กรอกถูกส่งแยกจากตัวคำสั่ง SQL จึงป้องกัน SQL injection ได้
